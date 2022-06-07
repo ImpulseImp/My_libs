@@ -1,8 +1,8 @@
 /*
  * USART_irq.c
  *
- * Created: 6/1/2022 4:21:33 PM
- *  Author: impul
+ * 
+ *  
  */ 
 #include <avr/io.h>
 #include <avr/interrupt.h>
