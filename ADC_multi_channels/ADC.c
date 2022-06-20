@@ -24,6 +24,6 @@ void ADC_Init(void)
 {
 	// Set up ADC
 	ADMUX |= (1 << REFS0); /* reference voltage on AVCC */
-	ADCSRA |= (1 << ADPS2) | (1 << ADPS0); /* ADC clock prescaler /8 */
+	ADCSRA |= (1 << ADPS2) | (1 << ADPS1); /* ADC clock prescaler /64 */
 	ADCSRA |= (1 << ADEN);
 }
