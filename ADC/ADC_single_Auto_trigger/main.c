@@ -32,10 +32,6 @@ void ADC_init(void) // ADC = ((Vin*1024)/Vref)
 	
 }
 	
-	
-
-
-
 int main(void)
 {
 	USART_Init(MYUBRR);
@@ -45,7 +41,7 @@ int main(void)
     /* Replace with your application code */
     while (1) 
     {
-		adcValue = ADC; /* read ADC */
-		printf("ADC is:%d \n", adcValue);			
+	adcValue = ADC; /* read ADC */
+	printf("ADC is:%d \n", adcValue);			
     }
 }
