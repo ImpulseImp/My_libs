@@ -8,6 +8,7 @@
 #include <avr/io.h>
 #include <stdio.h>
 #include "UART.h"
+int adcValue;
 void ADC_read (void);
 /*
 ADMUX
@@ -30,7 +31,7 @@ void ADC_init(void) // ADC = ((Vin*1024)/Vref)
 	
 	
 }
-	int adcValue;
+	
 	
 void ADC_read (void)
 {
@@ -51,7 +52,7 @@ int main(void)
     while (1) 
     {
 		ADC_read();
-		adcValue = ADC; /* read ADC in */
+		adcValue = ADC; /* read ADC */
 		printf("ADC is:%d \n", adcValue);
     }
 }
