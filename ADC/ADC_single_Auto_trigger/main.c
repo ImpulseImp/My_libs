@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include "UART.h"
 int adcValue;
-void ADC_read (void);
+
 /*
 ADMUX
 
